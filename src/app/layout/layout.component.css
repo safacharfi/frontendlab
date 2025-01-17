@@ -1,5 +1,121 @@
-.bg-nav{
-  height: 10vh; width: 100vw; 
-  background-image: linear-gradient(112.51deg, #c1d3ff 0%, #dcf5f7 49%, #fcd9e9 100%);
-    pointer-events: initial;
+/* Navbar styling */
+.bg-nav {
+  height: 64px; /* Hauteur standard plutôt que 10vh pour plus de consistance */
+  width: 100%;
+  background: #2196F3; /* Couleur principale de Material Design */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: white;
+}
+
+/* Sidenav container */
+.sidenav-container {
+  height: 100vh;
+  background: #fafafa;
+}
+
+/* Sidenav styling */
+.sidenav {
+  width: 250px;
+  background: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sidenav header */
+.sidenav-header {
+  background: #2196F3;
+  color: white;
+  height: 64px;
+}
+
+/* Navigation items */
+.nav-list {
+  padding: 8px;
+}
+
+.nav-item {
+  height: 48px;
+  margin: 4px 0;
+  border-radius: 4px;
+  color: #424242;
+}
+
+.nav-item:hover {
+  background-color: rgba(33, 150, 243, 0.08);
+}
+
+.nav-item.active {
+  background-color: rgba(33, 150, 243, 0.12);
+  color: #2196F3;
+}
+
+.nav-item-icon {
+  color: #616161;
+  margin-right: 16px;
+}
+
+.nav-item.active .nav-item-icon {
+  color: #2196F3;
+}
+
+/* Toolbar buttons */
+.toolbar-button {
+  color: white;
+}
+
+/* User section */
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.username {
+  margin: 0 12px;
+  color: white;
+  font-weight: 500;
+}
+
+/* Login button */
+.login-button {
+  background: white;
+  color: #2196F3;
+  padding: 0 16px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  font-weight: 500;
+  box-shadow: none;
+}
+
+.login-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Main content */
+.main-content {
+  padding: 24px;
+  background: #fafafa;
+  min-height: calc(100vh - 64px);
+}
+
+/* User menu */
+.mat-menu-content {
+  padding: 0;
+}
+
+.menu-item {
+  height: 48px;
+  line-height: 48px;
+  color: #424242;
+}
+
+.menu-item .mat-icon {
+  color: #616161;
+  margin-right: 16px;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
 }

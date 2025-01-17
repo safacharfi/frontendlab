@@ -1,54 +1,50 @@
-
-.justify-content{
-  display: flex;
-  justify-content: center;
+/* Appliquer un fond blanc à la page */
+body {
+  background-color: white !important;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.cards{
-  
-  width:80%;
-  margin: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.event-card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Conserver le style de la section contenant les outils */
+.cards.mat-elevation-z8 {
+  background-color: #ffffff !important; /* Fond blanc pour les cartes */
   border-radius: 8px;
-  overflow: hidden;
-  margin: 16px;
-  width: calc(25% - 2 * 16px);
-  transition: box-shadow 0.3s;
-
 }
 
-.event-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+/* S'assurer que les boutons et les autres éléments respectent les styles */
+mat-button, mat-raised-button, mat-icon-button {
+  color: #2196F3;
 }
 
+/* Améliorer l'apparence des cards */
+.event-card {
+  margin: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Détails spécifiques des cartes */
 .card-header {
-  display: flex;
-  justify-content: right;
-  background-image: 
-  linear-gradient(215.77deg, #c7c1ff 1%, #bbdbf7 65.57%, #efefff 100%);
-  color: white;
-  padding: 8px;
-  text-align: center;
-  border: 1px solid black;
+  font-weight: bold;
+  color: #333;
 }
 
-.pastel-grad{
-  background-image: linear-gradient(112.51deg, #c1d3ff 0%, #dcf5f7 49%, #fcd9e9 100%);
+/* Maintenir les arrière-plans pastel dans les cartes */
+.pastel-grad {
+  background: linear-gradient(135deg, #f6f7fb 0%, #ffffff 100%);
 }
 
+/* Améliorer l'alignement des boutons dans les cartes */
 .card-content {
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.no-data-row {
-  text-align: center;
-  margin-top: 16px;
-  font-style: italic;
-  color: #888;
+/* Préserver le style du paginator */
+mat-paginator {
+  background-color: #f4f4f4;
+  border-radius: 5px;
 }
